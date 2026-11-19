@@ -7,6 +7,7 @@ This repository releases the full materials for a preregistered test of one clai
 | Path | Contents |
 |---|---|
 | `docs/dimensional_specificity_preprint.md` | The paper |
+| `docs/dimensional_specificity_preprint.pdf` | The paper, typeset (PDF, 11 pages; same text) |
 | `docs/analysis_protocol.md` | The preregistration (written 2026-06-30, with amendment log) |
 | `docs/budget.md` | Compute-cost plan the protocol's Stage 2 sizing rule references |
 | `data/corpus_stage1/` | Pair manifests (source-item IDs), unmatched log, synthetic items |
