@@ -1,0 +1,147 @@
+{
+  "config_name": "stage1_anli",
+  "protocol": {
+    "primary_statistic": "max_persistence_paired_dz",
+    "margin": 0.2,
+    "floor": 0.5,
+    "alpha": 0.05,
+    "search_window": [
+      2,
+      3,
+      4
+    ]
+  },
+  "iterations": {
+    "bootstrap": 10000,
+    "permutation": 10000
+  },
+  "primary": {
+    "arm": "per_token",
+    "n_pairs": 86,
+    "normalized": true,
+    "per_dim": {
+      "0": {
+        "d_z": -0.05720552434265827,
+        "ci": [
+          -0.250568021407689,
+          0.1627297871481745
+        ],
+        "p_value": 0.6033396660333966,
+        "n_pairs": 86,
+        "testable": true
+      },
+      "1": {
+        "d_z": -0.014465946053872579,
+        "ci": [
+          -0.2360274239334962,
+          0.19905415746408853
+        ],
+        "p_value": 0.8948105189481051,
+        "n_pairs": 86,
+        "testable": true
+      },
+      "2": {
+        "d_z": 0.029013172242502657,
+        "ci": [
+          -0.19556278776315328,
+          0.22856802139085458
+        ],
+        "p_value": 0.7865213478652134,
+        "n_pairs": 86,
+        "testable": true
+      },
+      "3": {
+        "d_z": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p_value": 1.0,
+        "n_pairs": 86,
+        "testable": true
+      },
+      "4": {
+        "d_z": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p_value": 1.0,
+        "n_pairs": 86,
+        "testable": true
+      }
+    },
+    "dominance": {
+      "effect_sizes": {
+        "0": -0.05720552434265827,
+        "1": -0.014465946053872579,
+        "2": 0.029013172242502657,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "p_values": {
+        "0": 0.6033396660333966,
+        "1": 0.8948105189481051,
+        "2": 0.7865213478652134,
+        "3": 1.0,
+        "4": 1.0
+      },
+      "search_window": [
+        2,
+        3,
+        4
+      ],
+      "margin_threshold": 0.2,
+      "floor_threshold": 0.5,
+      "best_in_search_window": {
+        "dim": 2,
+        "effect_size": 0.029013172242502657,
+        "p_value": 0.7865213478652134,
+        "second_best_in_window": 0.0,
+        "margin_over_window": 0.029013172242502657,
+        "meets_margin": false,
+        "meets_floor": false,
+        "is_dominant": false
+      },
+      "h1_check": {
+        "effect_size": -0.014465946053872579,
+        "p_value": 0.8948105189481051,
+        "exceeds_search_window_best": false
+      },
+      "h0_check": {
+        "effect_size": -0.05720552434265827,
+        "p_value": 0.6033396660333966
+      }
+    },
+    "cell": {
+      "arm": "per_token",
+      "model": "meta-llama/Llama-3.1-8B",
+      "type": "pooled_natural_language"
+    },
+    "normalization": "diameter",
+    "holm": {
+      "family_dims": [
+        2,
+        3,
+        4
+      ],
+      "adjusted_p_values": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0
+      },
+      "rejected": {
+        "2": false,
+        "3": false,
+        "4": false
+      }
+    },
+    "confirmatory": {
+      "k_star": 2,
+      "is_dominant_by_effect": false,
+      "k_star_significant_holm": false,
+      "confirmed": false
+    }
+  },
+  "secondary": {}
+}

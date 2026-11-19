@@ -1,0 +1,89 @@
+# Stage 1 config (analysis_protocol Sections 9, 11).
+# Exploratory go/no-go, NOT the confirmatory run: 150 matched ANLI pairs,
+# base model, per-token arm, H0-H2 only. Its job is to confirm there is
+# contradiction-vs-coherent-edit signal worth paying for the full H2-H4 sweep.
+#
+# Stage 2 (the confirmatory run) is a separate config derived from this:
+# target_size bumped to the budget-locked count, topology max_dim set to 4,
+# the Instruct replication added, and Stage 1 items quarantined out. No item
+# is reused across stages.
+#
+# Source is ANLI, pooled (type_balance null): the Wu-2022 type classifier is
+# not built, so per-type allocation and the per-type robustness analysis are
+# deferred to secondary work (analysis_protocol Section 9, amended 2026-06-30).
+
+experiment:
+  name: "stage1_anli"
+  description: "Stage 1 exploratory: 150 ANLI pooled pairs, base, per-token, H0-H2"
+  random_seed: 42
+
+huggingface:
+  token: "hf_..."                       # falls back to HF_TOKEN env var
+  cache_dir: "data/hf_cache"
+
+corpus:
+  output_dir: "data/corpus_stage1"
+  contradiction:
+    sources: ["anli"]
+    target_size: 150
+    min_annotator_agreement: 0          # ANLI train is single gold-label
+    type_balance: null                  # pooled; Wu-2022 classifier deferred (secondary)
+  baseline:
+    sources: ["anli"]
+    target_size: 150
+    labels: ["neutral"]                 # primary coherent-edit control, Section 7
+    matching:
+      length_tolerance: 0.15
+      vocab_overlap_min: 0.3
+      syntax_complexity_tolerance: 0.2
+  synthetic:
+    target_size: 50
+    types: ["single_operator_flip", "single_numeric_change", "single_negation"]
+  attention_graph_subset:
+    contradiction: 50
+    baseline: 50
+    synthetic: 20
+
+inference:
+  output_dir: "data/embeddings_stage1"
+  models:
+    - name: "meta-llama/Llama-3.1-8B"
+      role: "base"
+      quantization: "4bit"
+      revision: "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b"   # SHA pin, Section 10
+    # Instruct replication is a Stage-2 / secondary run, not Stage 1.
+  batch_size: 4
+  representations:
+    extract_per_token_embeddings: true
+    extract_attention: false             # Stage 1 is per-token only (Section 11); the
+                                         # attention arm needs dionysus and is a later run
+    attention_layer_range: [22, 32]
+    per_token_layer: 24                  # analysis_protocol Section 10
+
+topology:
+  output_dir: "results/topology_stage1"
+  sentence_embedding_arm:
+    library: "ripser"
+    max_dim: 2                           # STAGE 1: H0-H2 only (Section 11)
+    subsample_size: 500
+    n_bootstrap: 20
+    sparse_filtration_threshold: 500
+  attention_graph_arm:
+    library: "dionysus"
+    max_dim: 2                           # STAGE 1: H0-H2 only
+    edge_weight_thresholds: 10
+    n_bootstrap: 10
+
+analysis:
+  output_dir: "results/analysis_stage1"
+  figure_dir: "results/figures_stage1"
+  bootstrap:
+    n_iterations: 10000                  # analysis_protocol Section 4.4
+    confidence_level: 0.95
+  permutation:
+    n_iterations: 10000                  # analysis_protocol Section 4.4
+  significance:
+    require_disjoint_ci: true
+    min_separation_ratio: 2.0
+  type_stratification: false             # pooled; per-type deferred
+  cross_arm_integration: true

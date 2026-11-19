@@ -1,0 +1,2013 @@
+{
+  "config_name": "stage1_anli",
+  "inference_manifest": "data/embeddings_stage1/manifest.json",
+  "output_dir": "results/topology_stage1",
+  "per_token_arm": {
+    "max_dim": 2,
+    "sparse_threshold": 500
+  },
+  "attention_arm": {
+    "max_dim": 2,
+    "n_thresholds": 10,
+    "density_range": [
+      0.05,
+      0.5
+    ]
+  },
+  "models": {
+    "meta-llama/Llama-3.1-8B": {
+      "name": "meta-llama/Llama-3.1-8B",
+      "role": "base",
+      "items": {
+        "anli_train_2226": {
+          "id": "anli_train_2226",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_2226__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_2703": {
+          "id": "anli_train_2703",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_2703__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5693": {
+          "id": "anli_train_5693",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5693__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3347": {
+          "id": "anli_train_3347",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3347__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13837": {
+          "id": "anli_train_13837",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13837__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_15896": {
+          "id": "anli_train_15896",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_15896__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_8": {
+          "id": "anli_train_8",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_8__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4268": {
+          "id": "anli_train_4268",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4268__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_15925": {
+          "id": "anli_train_15925",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_15925__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13898": {
+          "id": "anli_train_13898",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13898__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_2862": {
+          "id": "anli_train_2862",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_2862__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4169": {
+          "id": "anli_train_4169",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4169__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5849": {
+          "id": "anli_train_5849",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5849__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_16104": {
+          "id": "anli_train_16104",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_16104__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_15868": {
+          "id": "anli_train_15868",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_15868__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_16076": {
+          "id": "anli_train_16076",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_16076__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3664": {
+          "id": "anli_train_3664",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3664__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_2328": {
+          "id": "anli_train_2328",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_2328__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4436": {
+          "id": "anli_train_4436",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4436__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_392": {
+          "id": "anli_train_392",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_392__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4431": {
+          "id": "anli_train_4431",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4431__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_410": {
+          "id": "anli_train_410",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_410__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_350": {
+          "id": "anli_train_350",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_350__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_15876": {
+          "id": "anli_train_15876",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_15876__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5378": {
+          "id": "anli_train_5378",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5378__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4112": {
+          "id": "anli_train_4112",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4112__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13885": {
+          "id": "anli_train_13885",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13885__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13981": {
+          "id": "anli_train_13981",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13981__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4601": {
+          "id": "anli_train_4601",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4601__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_887": {
+          "id": "anli_train_887",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_887__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3170": {
+          "id": "anli_train_3170",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3170__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4755": {
+          "id": "anli_train_4755",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4755__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_2971": {
+          "id": "anli_train_2971",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_2971__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4712": {
+          "id": "anli_train_4712",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4712__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3242": {
+          "id": "anli_train_3242",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3242__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3402": {
+          "id": "anli_train_3402",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3402__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5427": {
+          "id": "anli_train_5427",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5427__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_1506": {
+          "id": "anli_train_1506",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_1506__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13971": {
+          "id": "anli_train_13971",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13971__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3847": {
+          "id": "anli_train_3847",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3847__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5222": {
+          "id": "anli_train_5222",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5222__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_417": {
+          "id": "anli_train_417",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_417__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4454": {
+          "id": "anli_train_4454",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4454__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4918": {
+          "id": "anli_train_4918",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4918__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5058": {
+          "id": "anli_train_5058",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5058__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3227": {
+          "id": "anli_train_3227",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3227__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_2844": {
+          "id": "anli_train_2844",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_2844__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4710": {
+          "id": "anli_train_4710",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4710__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5074": {
+          "id": "anli_train_5074",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5074__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_345": {
+          "id": "anli_train_345",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_345__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4614": {
+          "id": "anli_train_4614",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4614__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_76": {
+          "id": "anli_train_76",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_76__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5026": {
+          "id": "anli_train_5026",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5026__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5187": {
+          "id": "anli_train_5187",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5187__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5264": {
+          "id": "anli_train_5264",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5264__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3421": {
+          "id": "anli_train_3421",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3421__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_14175": {
+          "id": "anli_train_14175",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_14175__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_1924": {
+          "id": "anli_train_1924",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_1924__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3371": {
+          "id": "anli_train_3371",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3371__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4134": {
+          "id": "anli_train_4134",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4134__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3213": {
+          "id": "anli_train_3213",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3213__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3071": {
+          "id": "anli_train_3071",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3071__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13886": {
+          "id": "anli_train_13886",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13886__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13980": {
+          "id": "anli_train_13980",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13980__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4681": {
+          "id": "anli_train_4681",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4681__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_14221": {
+          "id": "anli_train_14221",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_14221__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_2650": {
+          "id": "anli_train_2650",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_2650__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3787": {
+          "id": "anli_train_3787",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3787__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_13961": {
+          "id": "anli_train_13961",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_13961__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_3207": {
+          "id": "anli_train_3207",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_3207__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5360": {
+          "id": "anli_train_5360",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5360__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_15890": {
+          "id": "anli_train_15890",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_15890__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5892": {
+          "id": "anli_train_5892",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5892__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_256": {
+          "id": "anli_train_256",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_256__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4735": {
+          "id": "anli_train_4735",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4735__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_14119": {
+          "id": "anli_train_14119",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_14119__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_10": {
+          "id": "anli_train_10",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_10__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4585": {
+          "id": "anli_train_4585",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4585__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_14053": {
+          "id": "anli_train_14053",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_14053__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_1222": {
+          "id": "anli_train_1222",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_1222__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5406": {
+          "id": "anli_train_5406",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5406__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_352": {
+          "id": "anli_train_352",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_352__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_5484": {
+          "id": "anli_train_5484",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_5484__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4159": {
+          "id": "anli_train_4159",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4159__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_1446": {
+          "id": "anli_train_1446",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_1446__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_4944": {
+          "id": "anli_train_4944",
+          "label": "neutral",
+          "class": "baseline",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_4944__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_6": {
+          "id": "anli_train_6",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_6__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_23": {
+          "id": "anli_train_23",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_23__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_24": {
+          "id": "anli_train_24",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_24__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_25": {
+          "id": "anli_train_25",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_25__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_26": {
+          "id": "anli_train_26",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_26__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_36": {
+          "id": "anli_train_36",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_36__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_51": {
+          "id": "anli_train_51",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_51__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_80": {
+          "id": "anli_train_80",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_80__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_89": {
+          "id": "anli_train_89",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_89__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_90": {
+          "id": "anli_train_90",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_90__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_91": {
+          "id": "anli_train_91",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_91__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_92": {
+          "id": "anli_train_92",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_92__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_93": {
+          "id": "anli_train_93",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_93__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_94": {
+          "id": "anli_train_94",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_94__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_95": {
+          "id": "anli_train_95",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_95__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_96": {
+          "id": "anli_train_96",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_96__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_97": {
+          "id": "anli_train_97",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_97__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_99": {
+          "id": "anli_train_99",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_99__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_104": {
+          "id": "anli_train_104",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_104__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_106": {
+          "id": "anli_train_106",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_106__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_108": {
+          "id": "anli_train_108",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_108__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_110": {
+          "id": "anli_train_110",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_110__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_111": {
+          "id": "anli_train_111",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_111__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_112": {
+          "id": "anli_train_112",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_112__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_113": {
+          "id": "anli_train_113",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_113__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_114": {
+          "id": "anli_train_114",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_114__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_116": {
+          "id": "anli_train_116",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_116__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_117": {
+          "id": "anli_train_117",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_117__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_136": {
+          "id": "anli_train_136",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_136__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_137": {
+          "id": "anli_train_137",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_137__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_138": {
+          "id": "anli_train_138",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_138__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_141": {
+          "id": "anli_train_141",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_141__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_154": {
+          "id": "anli_train_154",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_154__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_156": {
+          "id": "anli_train_156",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_156__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_159": {
+          "id": "anli_train_159",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_159__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_161": {
+          "id": "anli_train_161",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_161__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_163": {
+          "id": "anli_train_163",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_163__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_166": {
+          "id": "anli_train_166",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_166__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_171": {
+          "id": "anli_train_171",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_171__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_173": {
+          "id": "anli_train_173",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_173__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_174": {
+          "id": "anli_train_174",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_174__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_177": {
+          "id": "anli_train_177",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_177__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_178": {
+          "id": "anli_train_178",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_178__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_188": {
+          "id": "anli_train_188",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_188__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_192": {
+          "id": "anli_train_192",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_192__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_197": {
+          "id": "anli_train_197",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_197__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_203": {
+          "id": "anli_train_203",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_203__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_210": {
+          "id": "anli_train_210",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_210__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_222": {
+          "id": "anli_train_222",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_222__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_224": {
+          "id": "anli_train_224",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_224__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_225": {
+          "id": "anli_train_225",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_225__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_226": {
+          "id": "anli_train_226",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_226__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_229": {
+          "id": "anli_train_229",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_229__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_251": {
+          "id": "anli_train_251",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_251__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_268": {
+          "id": "anli_train_268",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_268__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_269": {
+          "id": "anli_train_269",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_269__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_270": {
+          "id": "anli_train_270",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_270__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_272": {
+          "id": "anli_train_272",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_272__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_273": {
+          "id": "anli_train_273",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_273__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_277": {
+          "id": "anli_train_277",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_277__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_279": {
+          "id": "anli_train_279",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_279__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_280": {
+          "id": "anli_train_280",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_280__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_284": {
+          "id": "anli_train_284",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_284__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_286": {
+          "id": "anli_train_286",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_286__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_289": {
+          "id": "anli_train_289",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_289__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_297": {
+          "id": "anli_train_297",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_297__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_303": {
+          "id": "anli_train_303",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_303__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_307": {
+          "id": "anli_train_307",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_307__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_308": {
+          "id": "anli_train_308",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_308__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_311": {
+          "id": "anli_train_311",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_311__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_319": {
+          "id": "anli_train_319",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_319__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_320": {
+          "id": "anli_train_320",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_320__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_324": {
+          "id": "anli_train_324",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_324__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_325": {
+          "id": "anli_train_325",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_325__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_326": {
+          "id": "anli_train_326",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_326__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_328": {
+          "id": "anli_train_328",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_328__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_330": {
+          "id": "anli_train_330",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_330__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_334": {
+          "id": "anli_train_334",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_334__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_336": {
+          "id": "anli_train_336",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_336__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_344": {
+          "id": "anli_train_344",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_344__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_349": {
+          "id": "anli_train_349",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_349__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_353": {
+          "id": "anli_train_353",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_353__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_358": {
+          "id": "anli_train_358",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_358__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_366": {
+          "id": "anli_train_366",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_366__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_370": {
+          "id": "anli_train_370",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_370__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_375": {
+          "id": "anli_train_375",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_375__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_378": {
+          "id": "anli_train_378",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_378__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_379": {
+          "id": "anli_train_379",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_379__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_382": {
+          "id": "anli_train_382",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_382__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_385": {
+          "id": "anli_train_385",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_385__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_390": {
+          "id": "anli_train_390",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_390__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_391": {
+          "id": "anli_train_391",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_391__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_394": {
+          "id": "anli_train_394",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_394__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_396": {
+          "id": "anli_train_396",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_396__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_399": {
+          "id": "anli_train_399",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_399__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_401": {
+          "id": "anli_train_401",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_401__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_406": {
+          "id": "anli_train_406",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_406__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_407": {
+          "id": "anli_train_407",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_407__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_411": {
+          "id": "anli_train_411",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_411__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_413": {
+          "id": "anli_train_413",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_413__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_416": {
+          "id": "anli_train_416",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_416__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_418": {
+          "id": "anli_train_418",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_418__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_427": {
+          "id": "anli_train_427",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_427__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_432": {
+          "id": "anli_train_432",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_432__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_434": {
+          "id": "anli_train_434",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_434__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_436": {
+          "id": "anli_train_436",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_436__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_437": {
+          "id": "anli_train_437",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_437__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_441": {
+          "id": "anli_train_441",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_441__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_442": {
+          "id": "anli_train_442",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_442__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_445": {
+          "id": "anli_train_445",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_445__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_446": {
+          "id": "anli_train_446",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_446__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_451": {
+          "id": "anli_train_451",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_451__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_454": {
+          "id": "anli_train_454",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_454__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_456": {
+          "id": "anli_train_456",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_456__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_457": {
+          "id": "anli_train_457",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_457__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_461": {
+          "id": "anli_train_461",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_461__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_463": {
+          "id": "anli_train_463",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_463__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_464": {
+          "id": "anli_train_464",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_464__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_465": {
+          "id": "anli_train_465",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_465__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_467": {
+          "id": "anli_train_467",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_467__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_468": {
+          "id": "anli_train_468",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_468__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_471": {
+          "id": "anli_train_471",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_471__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_473": {
+          "id": "anli_train_473",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_473__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_474": {
+          "id": "anli_train_474",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_474__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_476": {
+          "id": "anli_train_476",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_476__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_479": {
+          "id": "anli_train_479",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_479__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_484": {
+          "id": "anli_train_484",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_484__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_486": {
+          "id": "anli_train_486",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_486__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_487": {
+          "id": "anli_train_487",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_487__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_488": {
+          "id": "anli_train_488",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_488__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_490": {
+          "id": "anli_train_490",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_490__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_492": {
+          "id": "anli_train_492",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_492__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_496": {
+          "id": "anli_train_496",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_496__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_500": {
+          "id": "anli_train_500",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_500__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_504": {
+          "id": "anli_train_504",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_504__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_507": {
+          "id": "anli_train_507",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_507__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_510": {
+          "id": "anli_train_510",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_510__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_512": {
+          "id": "anli_train_512",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_512__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_515": {
+          "id": "anli_train_515",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_515__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_519": {
+          "id": "anli_train_519",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_519__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_522": {
+          "id": "anli_train_522",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_522__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_524": {
+          "id": "anli_train_524",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_524__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_530": {
+          "id": "anli_train_530",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_530__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_533": {
+          "id": "anli_train_533",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_533__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_534": {
+          "id": "anli_train_534",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_534__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_535": {
+          "id": "anli_train_535",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_535__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_537": {
+          "id": "anli_train_537",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_537__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_540": {
+          "id": "anli_train_540",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_540__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_542": {
+          "id": "anli_train_542",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_542__per_token.npz",
+          "attention_path": null
+        },
+        "anli_train_543": {
+          "id": "anli_train_543",
+          "label": "contradiction",
+          "class": "contradiction",
+          "per_token_path": "meta-llama__Llama-3.1-8B/anli_train_543__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_0": {
+          "id": "synthetic_single_operator_flip_0",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_0__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_1": {
+          "id": "synthetic_single_operator_flip_1",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_1__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_2": {
+          "id": "synthetic_single_operator_flip_2",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_2__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_3": {
+          "id": "synthetic_single_operator_flip_3",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_3__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_4": {
+          "id": "synthetic_single_operator_flip_4",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_4__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_5": {
+          "id": "synthetic_single_operator_flip_5",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_5__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_6": {
+          "id": "synthetic_single_operator_flip_6",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_6__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_7": {
+          "id": "synthetic_single_operator_flip_7",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_7__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_8": {
+          "id": "synthetic_single_operator_flip_8",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_8__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_9": {
+          "id": "synthetic_single_operator_flip_9",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_9__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_10": {
+          "id": "synthetic_single_operator_flip_10",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_10__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_11": {
+          "id": "synthetic_single_operator_flip_11",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_11__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_12": {
+          "id": "synthetic_single_operator_flip_12",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_12__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_13": {
+          "id": "synthetic_single_operator_flip_13",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_13__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_14": {
+          "id": "synthetic_single_operator_flip_14",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_14__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_operator_flip_15": {
+          "id": "synthetic_single_operator_flip_15",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_operator_flip_15__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_16": {
+          "id": "synthetic_single_numeric_change_16",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_16__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_17": {
+          "id": "synthetic_single_numeric_change_17",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_17__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_18": {
+          "id": "synthetic_single_numeric_change_18",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_18__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_19": {
+          "id": "synthetic_single_numeric_change_19",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_19__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_20": {
+          "id": "synthetic_single_numeric_change_20",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_20__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_21": {
+          "id": "synthetic_single_numeric_change_21",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_21__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_22": {
+          "id": "synthetic_single_numeric_change_22",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_22__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_23": {
+          "id": "synthetic_single_numeric_change_23",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_23__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_24": {
+          "id": "synthetic_single_numeric_change_24",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_24__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_25": {
+          "id": "synthetic_single_numeric_change_25",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_25__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_26": {
+          "id": "synthetic_single_numeric_change_26",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_26__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_27": {
+          "id": "synthetic_single_numeric_change_27",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_27__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_28": {
+          "id": "synthetic_single_numeric_change_28",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_28__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_29": {
+          "id": "synthetic_single_numeric_change_29",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_29__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_30": {
+          "id": "synthetic_single_numeric_change_30",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_30__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_numeric_change_31": {
+          "id": "synthetic_single_numeric_change_31",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_numeric_change_31__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_32": {
+          "id": "synthetic_single_negation_32",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_32__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_33": {
+          "id": "synthetic_single_negation_33",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_33__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_34": {
+          "id": "synthetic_single_negation_34",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_34__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_35": {
+          "id": "synthetic_single_negation_35",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_35__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_36": {
+          "id": "synthetic_single_negation_36",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_36__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_37": {
+          "id": "synthetic_single_negation_37",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_37__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_38": {
+          "id": "synthetic_single_negation_38",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_38__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_39": {
+          "id": "synthetic_single_negation_39",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_39__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_40": {
+          "id": "synthetic_single_negation_40",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_40__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_41": {
+          "id": "synthetic_single_negation_41",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_41__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_42": {
+          "id": "synthetic_single_negation_42",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_42__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_43": {
+          "id": "synthetic_single_negation_43",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_43__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_44": {
+          "id": "synthetic_single_negation_44",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_44__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_45": {
+          "id": "synthetic_single_negation_45",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_45__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_46": {
+          "id": "synthetic_single_negation_46",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_46__per_token.npz",
+          "attention_path": null
+        },
+        "synthetic_single_negation_47": {
+          "id": "synthetic_single_negation_47",
+          "label": "contradiction",
+          "class": "synthetic",
+          "per_token_path": "meta-llama__Llama-3.1-8B/synthetic_single_negation_47__per_token.npz",
+          "attention_path": null
+        }
+      }
+    }
+  }
+}
